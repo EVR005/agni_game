@@ -5,9 +5,10 @@ import Dashboard from "./Components/dashboard";
 import Dummy from "./Components/dummy";
 import Navbar from "./Components/navbar";
 import Items from "./Components/items";
-import Comp1 from "./Components/comp1";
+import About1 from "./Components/comp1";
 import Comp2 from "./Components/Comp2";
 import Collections from "./Components/collections";
+import Footer from "./Components/footer";
 
 function App() {
   return (
@@ -30,11 +31,12 @@ function App() {
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Collections />}></Route>
-          <Route path="/comp1" element={<Comp1 />}></Route>
+          <Route path="/comp1" element={<About1 />}></Route>
           <Route path="/comp2" element={<Comp2 />}></Route>
           <Route path="/items" element={<Items />}></Route>
         </Routes>
       </Router>
+      <Footer></Footer>
     </div>
   );
 }
