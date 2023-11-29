@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;900&family=Poppins:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap');
 
 body {
   margin: 0;
@@ -9,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --yellow: #f5efe0;
 }
 
 code {

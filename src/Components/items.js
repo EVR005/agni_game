@@ -53,7 +53,7 @@ const products = [
 
 export default function Items() {
   return (
-    <div className="bg-gradient-to-b from-red-600 via-red-400 to-red-200 text-white">
+    <div className="bg-gradient-to-b from-red-700 via-red-500 to-red-300 text-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="sr-only">Products</h2>
 
