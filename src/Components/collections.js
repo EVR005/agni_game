@@ -15,14 +15,14 @@
 const callouts = [
   {
     name: "CSAU",
-    description: "Computer Society of Anna University",
+    description: "Computer Society of Anna University [CSAU] is one of CEG's oldest technical clubs, functioning under Ramanujan Computing Centre [RCC]. The goal of CSAU is to extend the knowledge of computer science beyond the fields of CS and IT. In addition to helping students realize their technical interests, the club upskills them through knowledge sharing within the peer network. Our team at CSAU explores and experiments with new technologies with the goal of spreading the knowledge to the network. Bringing together peers, juniors, and alumni, we create an informative network to raise awareness about current technologies and assist in upskilling students. In order to shed light on the latest technologies, we conduct a number of events where spokespersons from various industries share their knowledge and experiences of working with those technologies. In addition to exploring new technologies, we are always looking to expand our peer network to share knowledge",
     imageSrc: "./logos/csau_logo.png",
     imageAlt: "https://csau.in",
     href: "https://csau.in",
   },
   {
     name: "SAAS",
-    description: "Students Association and Arts Society",
+    description: "The Students Association & Arts Society of CEG (SAAS) is the official cultural and student representative body at College of Engineering, Guindy. With a dedicated team of 20+ elected representatives, every member has a unique role to play. SAAS strives hard for the welfare of the student community. We believe that every student has immense potential waiting to be fulfilled. To support the same, we at SAAS promote collective participation, cooperation and individuality.",
     imageSrc: "./logos/saas_logo.png",
     imageAlt: "https://saasceg.in",
     href: "https://saasceg.in",
@@ -56,7 +56,7 @@ export default function Collections() {
                     {callout.name}
                   </h3>
                 </a>
-                <p className="text-base font-semibold text-gray-900">
+                <p className="text-base font-semibold text-gray-900 m-[15px]">
                   {callout.description}
                 </p>
               </div>
