@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: 2,
-    imageSrc: "../events/2.jpeg",
+    imageSrc: "../events/10.jpg",
   },
   {
     id: 3,
