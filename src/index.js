@@ -6,10 +6,13 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <App />
 );
+
+document.querySelector(".close-button").addEventListener("click", function () {
+  document.getElementById("popup").style.display = "none";
+  document.querySelector(".page").style.display = "none";
+})
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

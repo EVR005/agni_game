@@ -54,8 +54,10 @@ const products = [
 export default function Items() {
   return (
     <div className="bg-gradient-to-b from-red-700 via-red-500 to-red-300 text-white">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="sr-only">Products</h2>
+      <div className="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:max-w-7xl lg:px-8">
+        <p className="max-w-[700px] mx-auto mb-[2rem] text-transparent" style={{}}>
+          Hopefully, you already know that the next place is the Main Gallery in CEG ground. When viewed from front, the path you should take is North - West.
+        </p>
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
           {products.map((product, k) => {

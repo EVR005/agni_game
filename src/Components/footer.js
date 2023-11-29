@@ -1,25 +1,23 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+
 import {
-  CalendarDaysIcon,
-  HandRaisedIcon,
-  EnvelopeIcon,
   MapPinIcon,
 } from "@heroicons/react/24/outline";
+import footerStyles from "./Footer.module.css";
 
 export default function Footer() {
+
+  const handleSubscribe = () => {
+    document.getElementById("popup").style.display = "block";
+    document.querySelector(".page").style.display = "block";
+
+    try {
+      document.querySelector(".welcome-message").remove();
+    } catch (e) {
+
+    }
+    document.getElementById("page-dummy").insertAdjacentHTML('afterbegin', "<p class='welcome-message'>Just a dummy subscribe. Don't waste time in this.</p>");
+  };
+
   return (
     <div className="relative isolate overflow-hidden bg-red-950 py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -42,6 +40,7 @@ export default function Footer() {
                 placeholder="Enter your email"
               />
               <button
+                onClick={handleSubscribe}
                 type="submit"
                 className="flex-none rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
@@ -77,6 +76,17 @@ export default function Footer() {
               "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
         />
+      </div>
+      <div className={footerStyles.copyright}>
+        <p>Copyrights 2023 | Hunt of Web Wanderer</p>
+        <div className={footerStyles.developedBy}>
+          <p>
+            Developed by
+          </p>
+          <div className={footerStyles.csau}>
+            <a href='https://csau.in' target='_blank'><img src='/logos/csau.png' alt='csau' /></a>
+          </div>
+        </div>
       </div>
     </div>
   );

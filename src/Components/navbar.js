@@ -19,7 +19,6 @@ export default function Navbar() {
   const [reload, setReload] = useState(true);
   const togglecurrent = (e) => {
     let k = e.currentTarget.getAttribute("item_key");
-    console.log(k);
     navigation[k].current = true;
     let i = 0;
     for (i = 0; i < navigation.length; i++) {
@@ -58,6 +57,7 @@ export default function Navbar() {
                     {navigation.map((item, k) => {
                       return (
                         <Link
+                          key={k}
                           item_key={k}
                           to={item.to}
                           className={classNames(
@@ -93,6 +93,7 @@ export default function Navbar() {
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item, k) => (
                 <Link
+                  key={k}
                   item_key={k}
                   as="a"
                   to={item.to}
